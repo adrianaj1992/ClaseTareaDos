@@ -1,9 +1,18 @@
+:root {
+  --resaltador-color: #2196f3;
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --grey-color: #757575;
+  --fondo-color: #2f303a;
+}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto';
 }
+
 .header {
   width: 100%;
   height: 80px;
@@ -13,37 +22,108 @@
   align-items: center;
   padding: 0px 20px;
 }
-.header-container{
+
+.header-container {
   display: flex;
   gap: 40px;
-  
+  align-items: center;
 }
-.webstudio{
+
+.webstudio {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
-  color: #2196F3;
+  color: #2196f3;
+  cursor: pointer;
 }
+
 .header-nav {
   display: flex;
   justify-content: space-between;
-  
 }
-.header-nav-ul{
+
+.header-nav-ul {
   display: flex;
-}
-.header-main-tel{
-  display: flex;
-  justify-content: space-between;
   gap: 50px;
+}
+
+.header-li-menu>a{
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 16px;
+letter-spacing: 0.02em;
+color: #212121;
+}
+
+.header-li-menu>a:hover{
+  color:#2196f3;
+}
+.header-main{
+  margin-left: 344px;
+  gap:50px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-main-tel {
+  font-weight: 500;
+  font-size: 14px;
+  color: #757575;
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   font-size: 14px;
 }
+
+.header-main-tel>a:hover{
+  color:var(--resaltador-color);
+}
+
 /* Propiedades generales */
 li {
   list-style: none;
 }
+
 a {
-  color: rgba(33, 33, 33, 1);
-  text-decoration: none;
+  text-decoration: none;  
+}
+
+.contenedor-padre{
+  width: 100%;
+  height: 600px;
+  background: #2F303A;
+  display: flex;
+  justify-content:center;
+  flex-direction:column;
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  }
+
+.contenedor-Titulo{
+  width: 360px;
+  height: 90px;
+  font-weight: 800px;
+  font-size:26px;
+  line-height:45px;
+  text-align: center;
+  letter-spacing: 0,06em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2196f3;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+  color: rgb(255, 255, 255);
+  flex-direction: row;
+  height: 50px;
+  width: 240px;
+  margin-top: 30px;
 }
